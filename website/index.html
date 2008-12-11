@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+      
+  </title>
+  <script src="javascripts/rounded_corners_lite.inc.js" type="text/javascript"></script>
+<style>
+
+</style>
+  <script type="text/javascript">
+    window.onload = function() {
+      settings = {
+          tl: { radius: 10 },
+          tr: { radius: 10 },
+          bl: { radius: 10 },
+          br: { radius: 10 },
+          antiAlias: true,
+          autoPad: true,
+          validTags: ["div"]
+      }
+      var versionBox = new curvyCorners(settings, document.getElementById("version"));
+      versionBox.applyCornersToAll();
+    }
+  </script>
+</head>
+<body>
+<div id="main">
+
+    <h1></h1>
+    <div id="version" class="clickable" onclick='document.location = "http://rubyforge.org/projects/scruffy"; return false'>
+      <p>Get Version</p>
+      <a href="http://rubyforge.org/projects/scruffy" class="numbers">0.2.5</a>
+    </div>
+    <p><a href="index.html">Home</a>
+<a href="doc">Documentation</a>
+<a href="http://rubyforge.org/projects/scruffy/">RubyForge Project</a></p>
+
+
+	<h1>Don&#8217;t Worry.</h1>
+
+
+	<h1>Be Scruffy.</h1>
+
+
+	<blockquote>
+		<p>Beautiful Graphs for Ruby.</p>
+	</blockquote>
+
+
+	<h2>What is Scruffy?</h2>
+
+
+	<p>Scruffy is a Ruby library for generating attractive and powerful graphs, useful for web applications, print media and many others.</p>
+
+
+	<p>Scruffy&#8217;s key features include:</p>
+
+
+	<ul>
+	<li><strong>Built on <span class="caps">SVG</span></strong><br/>
+Scruffy uses <span class="caps">SVG</span> internally for rendering graphs. This allows Scruffy to render your graph identically at almost any size.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>Mix-n-Match Graphs</strong><br/>
+A Scruffy graph isn&#8217;t limited to a single graph type (line, bar, area, etc). You can specify a different type for every data set.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>Snapshot Rendering</strong><br/>
+You can render a Scruffy graph as many times as you want, and change any settings between renders. Data, colors, even the graph size and image type can all be changed for the next render.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>Easily Extendable</strong><br/>
+Scruffy is designed to be extremely extendible. Adding new graph types or themes can be done in as little as a few lines of code. If you need more control over your graphs, you can customize the layouts, data generation, almost anything.</li>
+	</ul>
+
+
+	<h2>Installing</h2>
+
+
+	<p><pre class='syntax'><span class="ident">sudo</span> <span class="ident">gem</span> <span class="ident">install</span> <span class="ident">scruffy</span></pre></p>
+
+
+	<h2>Demonstration of usage</h2>
+
+
+	<h3>Pie Chart
+<pre class='syntax'>
+    <span class="ident">graph</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Graph</span><span class="punct">.</span><span class="ident">new</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">title</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">Favourite Snacks</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">renderer</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Renderers</span><span class="punct">::</span><span class="constant">Pie</span><span class="punct">.</span><span class="ident">new</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:pie</span><span class="punct">,</span> <span class="punct">'</span><span class="string"></span><span class="punct">',</span> <span class="punct">{</span>
+      <span class="punct">'</span><span class="string">Apple</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="number">20</span><span class="punct">,</span>
+      <span class="punct">'</span><span class="string">Banana</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="number">100</span><span class="punct">,</span>
+      <span class="punct">'</span><span class="string">Orange</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="number">70</span><span class="punct">,</span>
+      <span class="punct">'</span><span class="string">Taco</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="number">30</span>
+    <span class="punct">}</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">pie_test.svg</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span> <span class="symbol">:width</span> <span class="punct">=&gt;</span> <span class="number">300</span><span class="punct">,</span> <span class="symbol">:height</span> <span class="punct">=&gt;</span> <span class="number">200</span><span class="punct">,</span>
+      <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">pie_test.png</span><span class="punct">&quot;,</span> <span class="symbol">:as</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">png</span><span class="punct">'</span>
+</pre></h3>
+
+
+	<p><img src="images/graphs/pie_test.png" alt="" /></p>
+
+
+	<h3>Line Graph
+<pre class='syntax'>
+    <span class="ident">graph</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Graph</span><span class="punct">.</span><span class="ident">new</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">title</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">Sample Line Graph</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">renderer</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Renderers</span><span class="punct">::</span><span class="constant">Standard</span><span class="punct">.</span><span class="ident">new</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:line</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Example</span><span class="punct">',</span> <span class="punct">[</span><span class="number">20</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="number">30</span><span class="punct">,</span> <span class="number">106</span><span class="punct">]</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">line_test.svg</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span>  <span class="symbol">:width</span> <span class="punct">=&gt;</span> <span class="number">300</span><span class="punct">,</span> <span class="symbol">:height</span> <span class="punct">=&gt;</span> <span class="number">200</span><span class="punct">,</span>
+      <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">line_test.png</span><span class="punct">&quot;,</span> <span class="symbol">:as</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">png</span><span class="punct">'</span>
+</pre></h3>
+
+
+	<p><img src="images/graphs/line_test.png" alt="" /></p>
+
+
+	<h3>Bar Graph
+<pre class='syntax'>
+    <span class="ident">graph</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Graph</span><span class="punct">.</span><span class="ident">new</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">title</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">Sample Line Graph</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">renderer</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Renderers</span><span class="punct">::</span><span class="constant">Standard</span><span class="punct">.</span><span class="ident">new</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:line</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Example</span><span class="punct">',</span> <span class="punct">[</span><span class="number">20</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="number">30</span><span class="punct">,</span> <span class="number">106</span><span class="punct">]</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">line_test.svg</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span>  <span class="symbol">:width</span> <span class="punct">=&gt;</span> <span class="number">300</span><span class="punct">,</span> <span class="symbol">:height</span> <span class="punct">=&gt;</span> <span class="number">200</span><span class="punct">,</span>
+      <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">line_test.png</span><span class="punct">&quot;,</span> <span class="symbol">:as</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">png</span><span class="punct">'</span>
+</pre></h3>
+
+
+	<p><img src="images/graphs/bar_test.png" alt="" /></p>
+
+
+	<h3>Split Graph
+<pre class='syntax'>
+    <span class="ident">graph</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Graph</span><span class="punct">.</span><span class="ident">new</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">title</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">Long-term Comparisons</span><span class="punct">&quot;</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">value_formatter</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Formatters</span><span class="punct">::</span><span class="constant">Currency</span><span class="punct">.</span><span class="ident">new</span><span class="punct">(</span>
+      <span class="symbol">:special_negatives</span> <span class="punct">=&gt;</span> <span class="constant">true</span><span class="punct">,</span> <span class="symbol">:negative_color</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">#ff7777</span><span class="punct">')</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">renderer</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Renderers</span><span class="punct">::</span><span class="constant">Split</span><span class="punct">.</span><span class="ident">new</span><span class="punct">(</span>
+      <span class="symbol">:split_label</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">Northeastern (Top) / Central (Bottom)</span><span class="punct">')</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:area</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jeff</span><span class="punct">',</span>
+      <span class="punct">[</span><span class="number">20</span><span class="punct">,</span> <span class="punct">-</span><span class="number">5</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="number">30</span><span class="punct">,</span> <span class="number">106</span><span class="punct">,</span> <span class="number">203</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">50</span><span class="punct">,</span> <span class="number">203</span><span class="punct">,</span> <span class="number">289</span><span class="punct">,</span> <span class="number">20</span><span class="punct">],</span>
+      <span class="symbol">:category</span> <span class="punct">=&gt;</span> <span class="symbol">:top</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:area</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jerry</span><span class="punct">',</span>
+      <span class="punct">[-</span><span class="number">10</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="number">20</span><span class="punct">,</span> <span class="number">102</span><span class="punct">,</span> <span class="number">201</span><span class="punct">,</span> <span class="number">26</span><span class="punct">,</span> <span class="number">30</span><span class="punct">,</span> <span class="number">106</span><span class="punct">,</span> <span class="number">203</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">50</span><span class="punct">,</span> <span class="number">39</span><span class="punct">],</span>
+      <span class="symbol">:category</span> <span class="punct">=&gt;</span> <span class="symbol">:top</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:bar</span><span class="punct">,</span>  <span class="punct">'</span><span class="string">Jack</span><span class="punct">',</span>
+      <span class="punct">[</span><span class="number">30</span><span class="punct">,</span> <span class="number">0</span><span class="punct">,</span> <span class="number">49</span><span class="punct">,</span> <span class="number">29</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">203</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="number">20</span><span class="punct">,</span> <span class="number">102</span><span class="punct">,</span> <span class="number">201</span><span class="punct">,</span> <span class="number">26</span><span class="punct">,</span> <span class="number">130</span><span class="punct">],</span>
+      <span class="symbol">:category</span> <span class="punct">=&gt;</span> <span class="symbol">:bottom</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:line</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Brasten</span><span class="punct">',</span>
+      <span class="punct">[</span><span class="number">42</span><span class="punct">,</span> <span class="number">10</span><span class="punct">,</span> <span class="number">75</span><span class="punct">,</span> <span class="number">150</span><span class="punct">,</span> <span class="number">130</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="punct">-</span><span class="number">10</span><span class="punct">,</span> <span class="punct">-</span><span class="number">20</span><span class="punct">,</span> <span class="number">50</span><span class="punct">,</span> <span class="number">92</span><span class="punct">,</span> <span class="punct">-</span><span class="number">21</span><span class="punct">,</span> <span class="number">19</span><span class="punct">],</span>
+      <span class="symbol">:categories</span> <span class="punct">=&gt;</span> <span class="punct">[</span><span class="symbol">:top</span><span class="punct">,</span> <span class="symbol">:bottom</span><span class="punct">]</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:line</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jim</span><span class="punct">',</span>
+      <span class="punct">[-</span><span class="number">10</span><span class="punct">,</span> <span class="punct">-</span><span class="number">20</span><span class="punct">,</span> <span class="number">50</span><span class="punct">,</span> <span class="number">92</span><span class="punct">,</span> <span class="punct">-</span><span class="number">21</span><span class="punct">,</span> <span class="number">56</span><span class="punct">,</span> <span class="number">92</span><span class="punct">,</span> <span class="number">84</span><span class="punct">,</span> <span class="number">82</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">39</span><span class="punct">,</span> <span class="number">120</span><span class="punct">],</span>
+      <span class="symbol">:categories</span> <span class="punct">=&gt;</span> <span class="punct">[</span><span class="symbol">:top</span><span class="punct">,</span> <span class="symbol">:bottom</span><span class="punct">]</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">point_markers</span> <span class="punct">=</span> <span class="punct">['</span><span class="string">Jan</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Feb</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Mar</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Apr</span><span class="punct">',</span> <span class="punct">'</span><span class="string">May</span><span class="punct">',</span>
+      <span class="punct">'</span><span class="string">Jun</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Jul</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Aug</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Sep</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Oct</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Nov</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Dec</span><span class="punct">']</span>
+    
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">split_test.svg</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span>  <span class="symbol">:width</span> <span class="punct">=&gt;</span> <span class="number">500</span><span class="punct">,</span>
+      <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">split_test.png</span><span class="punct">&quot;,</span> <span class="symbol">:as</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">png</span><span class="punct">'</span>
+</pre></h3>
+
+
+	<p><img src="images/graphs/split_test.png" alt="" /></p>
+
+
+	<h3>Stacking Graph Types
+<pre class='syntax'>
+    <span class="ident">graph</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Graph</span><span class="punct">.</span><span class="ident">new</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">title</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">Comparative Agent Performance</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">value_formatter</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Formatters</span><span class="punct">::</span><span class="constant">Percentage</span><span class="punct">.</span><span class="ident">new</span><span class="punct">(</span><span class="symbol">:precision</span> <span class="punct">=&gt;</span> <span class="number">0</span><span class="punct">)</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:stacked</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">stacked</span><span class="punct">|</span>
+      <span class="ident">stacked</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:bar</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jack</span><span class="punct">',</span> <span class="punct">[</span><span class="number">30</span><span class="punct">,</span> <span class="number">60</span><span class="punct">,</span> <span class="number">49</span><span class="punct">,</span> <span class="number">29</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">120</span><span class="punct">]</span>
+      <span class="ident">stacked</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:bar</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jill</span><span class="punct">',</span> <span class="punct">[</span><span class="number">120</span><span class="punct">,</span> <span class="number">240</span><span class="punct">,</span> <span class="number">0</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">140</span><span class="punct">,</span> <span class="number">20</span><span class="punct">]</span>
+      <span class="ident">stacked</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:bar</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Hill</span><span class="punct">',</span> <span class="punct">[</span><span class="number">10</span><span class="punct">,</span> <span class="number">10</span><span class="punct">,</span> <span class="number">90</span><span class="punct">,</span> <span class="number">20</span><span class="punct">,</span> <span class="number">40</span><span class="punct">,</span> <span class="number">10</span><span class="punct">]</span>
+    <span class="keyword">end</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">point_markers</span> <span class="punct">=</span> <span class="punct">['</span><span class="string">Jan</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Feb</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Mar</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Apr</span><span class="punct">',</span> <span class="punct">'</span><span class="string">May</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Jun</span><span class="punct">']</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">stacking_test.svg</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span>  <span class="symbol">:width</span> <span class="punct">=&gt;</span> <span class="number">500</span><span class="punct">,</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">stacking_test.png</span><span class="punct">&quot;,</span> <span class="symbol">:as</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">png</span><span class="punct">'</span>
+</pre></h3>
+
+
+	<p><img src="images/graphs/stacking_test.png" alt="" /></p>
+
+
+	<h3>Multi-viewport Multi-layered
+<pre class='syntax'>
+    <span class="ident">graph</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Graph</span><span class="punct">.</span><span class="ident">new</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">title</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">Some Kind of Information</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">renderer</span> <span class="punct">=</span> <span class="constant">Scruffy</span><span class="punct">::</span><span class="constant">Renderers</span><span class="punct">::</span><span class="constant">Cubed</span><span class="punct">.</span><span class="ident">new</span>
+
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:area</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jeff</span><span class="punct">',</span> <span class="punct">[</span><span class="number">20</span><span class="punct">,</span> <span class="punct">-</span><span class="number">5</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="number">30</span><span class="punct">,</span> <span class="number">106</span><span class="punct">],</span>
+      <span class="symbol">:categories</span> <span class="punct">=&gt;</span> <span class="punct">[</span><span class="symbol">:top_left</span><span class="punct">,</span> <span class="symbol">:bottom_right</span><span class="punct">]</span>    
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:area</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jerry</span><span class="punct">',</span> <span class="punct">[-</span><span class="number">10</span><span class="punct">,</span> <span class="number">70</span><span class="punct">,</span> <span class="number">20</span><span class="punct">,</span> <span class="number">102</span><span class="punct">,</span> <span class="number">201</span><span class="punct">,</span> <span class="number">26</span><span class="punct">],</span>
+      <span class="symbol">:categories</span> <span class="punct">=&gt;</span> <span class="punct">[</span><span class="symbol">:bottom_left</span><span class="punct">,</span> <span class="symbol">:buttom_right</span><span class="punct">]</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:bar</span><span class="punct">,</span>  <span class="punct">'</span><span class="string">Jack</span><span class="punct">',</span> <span class="punct">[</span><span class="number">30</span><span class="punct">,</span> <span class="number">0</span><span class="punct">,</span> <span class="number">49</span><span class="punct">,</span> <span class="number">29</span><span class="punct">,</span> <span class="number">100</span><span class="punct">,</span> <span class="number">203</span><span class="punct">],</span>
+      <span class="symbol">:categories</span> <span class="punct">=&gt;</span> <span class="punct">[</span><span class="symbol">:bottom_left</span><span class="punct">,</span> <span class="symbol">:top_right</span><span class="punct">]</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:line</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Brasten</span><span class="punct">',</span> <span class="punct">[</span><span class="number">42</span><span class="punct">,</span> <span class="number">10</span><span class="punct">,</span> <span class="number">75</span><span class="punct">,</span> <span class="number">150</span><span class="punct">,</span> <span class="number">130</span><span class="punct">,</span> <span class="number">70</span><span class="punct">],</span>
+      <span class="symbol">:categories</span> <span class="punct">=&gt;</span> <span class="punct">[</span><span class="symbol">:top_right</span><span class="punct">,</span> <span class="symbol">:bottom_left</span><span class="punct">]</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">add</span> <span class="symbol">:line</span><span class="punct">,</span> <span class="punct">'</span><span class="string">Jim</span><span class="punct">',</span> <span class="punct">[-</span><span class="number">10</span><span class="punct">,</span> <span class="punct">-</span><span class="number">20</span><span class="punct">,</span> <span class="number">50</span><span class="punct">,</span> <span class="number">92</span><span class="punct">,</span> <span class="punct">-</span><span class="number">21</span><span class="punct">,</span> <span class="number">56</span><span class="punct">],</span>
+      <span class="symbol">:categories</span> <span class="punct">=&gt;</span> <span class="punct">[</span><span class="symbol">:top_left</span><span class="punct">,</span> <span class="symbol">:bottom_right</span><span class="punct">]</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">point_markers</span> <span class="punct">=</span> <span class="punct">['</span><span class="string">Jan</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Feb</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Mar</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Apr</span><span class="punct">',</span> <span class="punct">'</span><span class="string">May</span><span class="punct">',</span> <span class="punct">'</span><span class="string">Jun</span><span class="punct">']</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">multi_test.svg</span><span class="punct">&quot;</span>
+    <span class="ident">graph</span><span class="punct">.</span><span class="ident">render</span>  <span class="symbol">:width</span> <span class="punct">=&gt;</span> <span class="number">500</span><span class="punct">,</span> <span class="symbol">:to</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">multi_test.png</span><span class="punct">&quot;,</span> <span class="symbol">:as</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">png</span><span class="punct">'</span>
+</pre></h3>
+
+
+	<p><img src="images/graphs/multi_test.png" alt="" /></p>
+
+
+	<h2>Source Code</h2>
+
+
+	<p>The trunk repository is <code>svn://rubyforge.org/var/svn/scruffy/trunk</code> for anonymous access.</p>
+
+
+	<p>Rubyforge Project is <a href="http://rubyforge.org/projects/scruffy/" class="major">here</a></p>
+
+
+	<h2>News
+	<ul>
+	<li><strong>2008-10-13, Scruffy 0.2.5</strong> &#8211; Fixed font_family settings from theme.</li>
+	</ul></h2>
+
+
+	<ul>
+	<li><strong>2008-08-22, Scruffy 0.2.4</strong> &#8211; Bug fixes:
+Bug 21517, legend text missing, fixed.
+Bug 21604, Fails to properly require RMagick, fixed.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>July 8th, 2008, Scruffy 0.2.3</strong> &#8211; Pie Charts added.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>August 18th, 2006, Scruffy 0.2.2</strong> &#8211; Significant changes from 0.1.0!  New layouts, better rendering, etc.
+Check out more examples at <a href="http://www.ibrasten.com/articles/tag/scruffy">iBrasten.com</a></li>
+	</ul>
+
+
+	<ul>
+	<li><strong>August 11th, 2006, Scruffy 0.1.0</strong> &#8211; the first release intended for public use &#8211; has been posted!</li>
+	</ul>
+
+
+	<h2>License</h2>
+
+
+	<p>This code is free to use under the terms of the <span class="caps">MIT</span> license.</p>
+
+
+	<h2>Contact</h2>
+
+
+	<p>Scruffy was created by <a href="http://www.ibrasten.com">Brasten Sager</a>.</p>
+
+
+	<p>Collaborative work by <a href="http://www.ajostman.com/blog">A.J. Ostman</a>.</p>
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+    _uacct = &#8220;UA-1742674-1&#8221;;
+    urchinTracker();
+</script>
+    <p class="coda">
+      13th October 2008<br>
+    </p>
+</div>
+
+<!-- insert site tracking codes here, like Google Urchin -->
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"  type=""?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="360" xmlns="http://www.w3.org/2000/svg">
+  <g id="scruffy_graph">
+    <g transform="translate(0.0, 0.0)" id="background">
+      <defs>
+        <linearGradient x2="0%" y2="100%" x1="0%" id="BackgroundGradient" y1="0%">
+          <stop stop-color="black" offset="5%"/>
+          <stop stop-color="#4A465A" offset="95%"/>
+        </linearGradient>
+      </defs>
+      <rect width="600.0" x="0" y="0" height="360.0" fill="url(#BackgroundGradient)"/>
+    </g>
+    <g transform="translate(30.0, 7.2)" id="title">
+      <text class="title" font-size="25.2" x="270.0" text-anchor="middle" y="25.2" stroke="none" stroke-width="0" fill="white">Long-term Comparisons</text>
+    </g>
+    <g transform="translate(180.0, 196.2)" id="label_one">
+      <text class="text" font-size="10.8" x="120.0" text-anchor="middle" y="10.8" stroke="none" stroke-width="0" fill="white">Northeastern (Top) / Central (Bottom)</text>
+    </g>
+    <g transform="translate(18.0, 72.0)" id="top">
+      <g>
+        <g transform="translate(54.0, 0.0)" id="grid">
+          <line x2="486.0" y2="0.0" x1="0" style="stroke: white; stroke-width: 2;" y1="0.0"/>
+          <line x2="486.0" y2="24.03" x1="0" style="stroke: white; stroke-width: 2;" y1="24.03"/>
+          <line x2="486.0" y2="48.06" x1="0" style="stroke: white; stroke-width: 2;" y1="48.06"/>
+          <line x2="486.0" y2="72.09" x1="0" style="stroke: white; stroke-width: 2;" y1="72.09"/>
+          <line x2="486.0" y2="96.12" x1="0" style="stroke: white; stroke-width: 2;" y1="96.12"/>
+        </g>
+        <g transform="translate(0.0, 2.16)" id="values">
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="96.12" fill="white">($67.50)</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="72.09" fill="white">$21.62</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="48.06" fill="white">$110.75</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="24.03" fill="white">$199.88</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="0.0" fill="white">$289.00</text>
+        </g>
+        <g transform="translate(54.0, 99.36)" id="labels">
+          <text font-size="7.776" x="0.0" text-anchor="middle" y="8.64" fill="white">Jan</text>
+          <text font-size="7.776" x="44.1818181818182" text-anchor="middle" y="8.64" fill="white">Feb</text>
+          <text font-size="7.776" x="88.3636363636364" text-anchor="middle" y="8.64" fill="white">Mar</text>
+          <text font-size="7.776" x="132.545454545455" text-anchor="middle" y="8.64" fill="white">Apr</text>
+          <text font-size="7.776" x="176.727272727273" text-anchor="middle" y="8.64" fill="white">May</text>
+          <text font-size="7.776" x="220.909090909091" text-anchor="middle" y="8.64" fill="white">Jun</text>
+          <text font-size="7.776" x="265.090909090909" text-anchor="middle" y="8.64" fill="white">Jul</text>
+          <text font-size="7.776" x="309.272727272727" text-anchor="middle" y="8.64" fill="white">Aug</text>
+          <text font-size="7.776" x="353.454545454545" text-anchor="middle" y="8.64" fill="white">Sep</text>
+          <text font-size="7.776" x="397.636363636364" text-anchor="middle" y="8.64" fill="white">Oct</text>
+          <text font-size="7.776" x="441.818181818182" text-anchor="middle" y="8.64" fill="white">Nov</text>
+          <text font-size="7.776" x="486.0" text-anchor="middle" y="8.64" fill="white">Dec</text>
+        </g>
+        <g transform="translate(54.0, 0.0)" id="graphs">
+          <g class="graph_layer" id="component_graphs_graph_0">
+            <g transform="translate(0, -1.9224)">
+              <polygon points="0,96.12 0.0,72.5281346423562 44.1818181818182,79.268667601683 88.3636363636364,50.9584291725105 132.545454545455,59.0470687237027 176.727272727273,69.8319214586255 220.909090909091,49.3407012622721 265.090909090909,23.1874333800842 309.272727272727,50.9584291725105 353.454545454545,64.4394950911641 397.636363636364,23.1874333800842 441.818181818182,0.0 486.0,72.5281346423562 486.0,96.12" style="fill: black; stroke: black; fill-opacity: 0.06; stroke-opacity: 0.06;"/>
+            </g>
+            <polygon stroke="#6886B4" points="0,96.12 0.0,72.5281346423562 44.1818181818182,79.268667601683 88.3636363636364,50.9584291725105 132.545454545455,59.0470687237027 176.727272727273,69.8319214586255 220.909090909091,49.3407012622721 265.090909090909,23.1874333800842 309.272727272727,50.9584291725105 353.454545454545,64.4394950911641 397.636363636364,23.1874333800842 441.818181818182,0.0 486.0,72.5281346423562 486.0,96.12" fill="#6886B4" style="opacity: 1.0"/>
+          </g>
+          <g class="graph_layer" id="component_graphs_graph_1">
+            <g transform="translate(0, -1.9224)">
+              <polygon points="0,96.12 0.0,80.6167741935484 44.1818181818182,59.0470687237027 88.3636363636364,72.5281346423562 132.545454545455,50.4191865357644 176.727272727273,23.7266760168303 220.909090909091,70.9104067321178 265.090909090909,69.8319214586255 309.272727272727,49.3407012622721 353.454545454545,23.1874333800842 397.636363636364,50.9584291725105 441.818181818182,64.4394950911641 486.0,67.4053295932679 486.0,96.12" style="fill: black; stroke: black; fill-opacity: 0.06; stroke-opacity: 0.06;"/>
+            </g>
+            <polygon stroke="#FDD84E" points="0,96.12 0.0,80.6167741935484 44.1818181818182,59.0470687237027 88.3636363636364,72.5281346423562 132.545454545455,50.4191865357644 176.727272727273,23.7266760168303 220.909090909091,70.9104067321178 265.090909090909,69.8319214586255 309.272727272727,49.3407012622721 353.454545454545,23.1874333800842 397.636363636364,50.9584291725105 441.818181818182,64.4394950911641 486.0,67.4053295932679 486.0,96.12" fill="#FDD84E" style="opacity: 0.85"/>
+          </g>
+          <g class="graph_layer" id="component_graphs_graph_2">
+            <g class="shadow" transform="translate(0.4806, 0.4806)">
+              <polyline stroke="black" stroke-width="1.9224" points="0.0,66.5964656381487 44.1818181818182,75.224347826087 88.3636363636364,57.6989621318373 132.545454545455,37.477363253857 176.727272727273,42.8697896213184 220.909090909091,59.0470687237027 265.090909090909,80.6167741935484 309.272727272727,83.3129873772791 353.454545454545,64.4394950911641 397.636363636364,53.1153997194951 441.818181818182,83.5826086956522 486.0,72.7977559607293" fill="transparent" style="fill-opacity: 0; stroke-opacity: 0.35"/>
+              <circle r="1.9224" cx="0.0" cy="67.4615456381487" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="44.1818181818182" cy="76.089427826087" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="88.3636363636364" cy="58.5640421318373" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="132.545454545455" cy="38.3424432538569" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="176.727272727273" cy="43.7348696213184" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="220.909090909091" cy="59.9121487237027" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="265.090909090909" cy="81.4818541935484" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="309.272727272727" cy="84.1780673772791" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="353.454545454545" cy="65.3045750911641" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="397.636363636364" cy="53.9804797194951" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="441.818181818182" cy="84.4476886956522" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="486.0" cy="73.6628359607293" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+            </g>
+            <polyline stroke="#72AE6E" stroke-width="1.9224" points="0.0,66.5964656381487 44.1818181818182,75.224347826087 88.3636363636364,57.6989621318373 132.545454545455,37.477363253857 176.727272727273,42.8697896213184 220.909090909091,59.0470687237027 265.090909090909,80.6167741935484 309.272727272727,83.3129873772791 353.454545454545,64.4394950911641 397.636363636364,53.1153997194951 441.818181818182,83.5826086956522 486.0,72.7977559607293" fill="none"/>
+            <circle r="1.9224" cx="0.0" cy="66.5964656381487" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="44.1818181818182" cy="75.224347826087" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="88.3636363636364" cy="57.6989621318373" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="132.545454545455" cy="37.477363253857" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="176.727272727273" cy="42.8697896213184" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="220.909090909091" cy="59.0470687237027" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="265.090909090909" cy="80.6167741935484" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="309.272727272727" cy="83.3129873772791" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="353.454545454545" cy="64.4394950911641" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="397.636363636364" cy="53.1153997194951" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="441.818181818182" cy="83.5826086956522" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="486.0" cy="72.7977559607293" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+          </g>
+          <g class="graph_layer" id="component_graphs_graph_3">
+            <g class="shadow" transform="translate(0.4806, 0.4806)">
+              <polyline stroke="black" stroke-width="1.9224" points="0.0,80.6167741935484 44.1818181818182,83.3129873772791 88.3636363636364,64.4394950911641 132.545454545455,53.1153997194951 176.727272727273,83.5826086956522 220.909090909091,62.8217671809257 265.090909090909,53.1153997194951 309.272727272727,55.2723702664797 353.454545454545,55.8116129032258 397.636363636364,50.9584291725105 441.818181818182,67.4053295932679 486.0,45.5660028050491" fill="transparent" style="fill-opacity: 0; stroke-opacity: 0.35"/>
+              <circle r="1.9224" cx="0.0" cy="81.4818541935484" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="44.1818181818182" cy="84.1780673772791" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="88.3636363636364" cy="65.3045750911641" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="132.545454545455" cy="53.9804797194951" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="176.727272727273" cy="84.4476886956522" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="220.909090909091" cy="63.6868471809257" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="265.090909090909" cy="53.9804797194951" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="309.272727272727" cy="56.1374502664797" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="353.454545454545" cy="56.6766929032258" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="397.636363636364" cy="51.8235091725105" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="441.818181818182" cy="68.2704095932679" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="486.0" cy="46.4310828050491" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+            </g>
+            <polyline stroke="#D1695E" stroke-width="1.9224" points="0.0,80.6167741935484 44.1818181818182,83.3129873772791 88.3636363636364,64.4394950911641 132.545454545455,53.1153997194951 176.727272727273,83.5826086956522 220.909090909091,62.8217671809257 265.090909090909,53.1153997194951 309.272727272727,55.2723702664797 353.454545454545,55.8116129032258 397.636363636364,50.9584291725105 441.818181818182,67.4053295932679 486.0,45.5660028050491" fill="none"/>
+            <circle r="1.9224" cx="0.0" cy="80.6167741935484" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="44.1818181818182" cy="83.3129873772791" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="88.3636363636364" cy="64.4394950911641" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="132.545454545455" cy="53.1153997194951" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="176.727272727273" cy="83.5826086956522" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="220.909090909091" cy="62.8217671809257" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="265.090909090909" cy="53.1153997194951" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="309.272727272727" cy="55.2723702664797" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="353.454545454545" cy="55.8116129032258" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="397.636363636364" cy="50.9584291725105" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="441.818181818182" cy="67.4053295932679" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="486.0" cy="45.5660028050491" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(18.0, 234.0)" id="bottom">
+      <g>
+        <g transform="translate(54.0, 0.0)" id="grid">
+          <line x2="486.0" y2="0.0" x1="0" style="stroke: white; stroke-width: 2;" y1="0.0"/>
+          <line x2="486.0" y2="24.03" x1="0" style="stroke: white; stroke-width: 2;" y1="24.03"/>
+          <line x2="486.0" y2="48.06" x1="0" style="stroke: white; stroke-width: 2;" y1="48.06"/>
+          <line x2="486.0" y2="72.09" x1="0" style="stroke: white; stroke-width: 2;" y1="72.09"/>
+          <line x2="486.0" y2="96.12" x1="0" style="stroke: white; stroke-width: 2;" y1="96.12"/>
+        </g>
+        <g transform="translate(0.0, 2.16)" id="values">
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="96.12" fill="white">($67.50)</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="72.09" fill="white">$21.62</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="48.06" fill="white">$110.75</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="24.03" fill="white">$199.88</text>
+          <text font-size="7.6896" x="43.2" text-anchor="end" y="0.0" fill="white">$289.00</text>
+        </g>
+        <g transform="translate(54.0, 99.36)" id="labels">
+          <text font-size="7.776" x="0.0" text-anchor="middle" y="8.64" fill="white">Jan</text>
+          <text font-size="7.776" x="44.1818181818182" text-anchor="middle" y="8.64" fill="white">Feb</text>
+          <text font-size="7.776" x="88.3636363636364" text-anchor="middle" y="8.64" fill="white">Mar</text>
+          <text font-size="7.776" x="132.545454545455" text-anchor="middle" y="8.64" fill="white">Apr</text>
+          <text font-size="7.776" x="176.727272727273" text-anchor="middle" y="8.64" fill="white">May</text>
+          <text font-size="7.776" x="220.909090909091" text-anchor="middle" y="8.64" fill="white">Jun</text>
+          <text font-size="7.776" x="265.090909090909" text-anchor="middle" y="8.64" fill="white">Jul</text>
+          <text font-size="7.776" x="309.272727272727" text-anchor="middle" y="8.64" fill="white">Aug</text>
+          <text font-size="7.776" x="353.454545454545" text-anchor="middle" y="8.64" fill="white">Sep</text>
+          <text font-size="7.776" x="397.636363636364" text-anchor="middle" y="8.64" fill="white">Oct</text>
+          <text font-size="7.776" x="441.818181818182" text-anchor="middle" y="8.64" fill="white">Nov</text>
+          <text font-size="7.776" x="486.0" text-anchor="middle" y="8.64" fill="white">Dec</text>
+        </g>
+        <g transform="translate(54.0, 0.0)" id="graphs">
+          <g class="graph_layer" id="component_graphs_graph_0">
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="2.025" y="69.8319214586255" height="27.2492785413745" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="2.5056" y="71.7543214586255" height="25.8074785413745" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="2.025" y="69.8319214586255" height="26.2880785413745" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="42.525" y="77.9205610098177" height="19.1606389901823" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="43.0056" y="79.8429610098177" height="17.7188389901823" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="42.525" y="77.9205610098177" height="18.1994389901823" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="83.025" y="64.7091164095372" height="32.3720835904628" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="83.5056" y="66.6315164095372" height="30.9302835904628" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="83.025" y="64.7091164095372" height="31.4108835904628" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="123.525" y="70.1015427769986" height="26.9796572230014" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="124.0056" y="72.0239427769986" height="25.5378572230014" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="123.525" y="70.1015427769986" height="26.0184572230014" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="164.025" y="50.9584291725105" height="46.1227708274895" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="164.5056" y="52.8808291725105" height="44.6809708274895" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="164.025" y="50.9584291725105" height="45.1615708274895" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="204.525" y="23.1874333800842" height="73.8937666199159" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="205.0056" y="25.1098333800842" height="72.4519666199159" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="204.525" y="23.1874333800842" height="72.9325666199158" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="245.025" y="59.0470687237027" height="38.0341312762973" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="245.5056" y="60.9694687237027" height="36.5923312762973" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="245.025" y="59.0470687237027" height="37.0729312762973" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="285.525" y="72.5281346423562" height="24.5530653576438" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="286.0056" y="74.4505346423562" height="23.1112653576438" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="285.525" y="72.5281346423562" height="23.5918653576438" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="326.025" y="50.4191865357644" height="46.6620134642356" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="326.5056" y="52.3415865357644" height="45.2202134642356" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="326.025" y="50.4191865357644" height="45.7008134642356" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="366.525" y="23.7266760168303" height="73.3545239831697" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="367.0056" y="25.6490760168303" height="71.9127239831697" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="366.525" y="23.7266760168303" height="72.3933239831697" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="407.025" y="70.9104067321178" height="26.1707932678822" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="407.5056" y="72.8328067321178" height="24.7289932678822" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="407.025" y="70.9104067321178" height="25.2095932678822" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+            <g transform="translate(-0.4806, -0.4806)">
+              <rect width="37.4112" x="447.525" y="42.8697896213184" height="54.2114103786816" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+              <rect width="37.4112" x="448.0056" y="44.7921896213184" height="52.7696103786816" style="fill: black; fill-opacity: 0.15; stroke: none;"/>
+            </g>
+            <rect width="36.45" x="447.525" y="42.8697896213184" height="53.2502103786816" fill="#8A6EAF" style="opacity: 1.0; stroke: none;"/>
+          </g>
+          <g class="graph_layer" id="component_graphs_graph_1">
+            <g class="shadow" transform="translate(0.4806, 0.4806)">
+              <polyline stroke="black" stroke-width="1.9224" points="0.0,66.5964656381487 44.1818181818182,75.224347826087 88.3636363636364,57.6989621318373 132.545454545455,37.477363253857 176.727272727273,42.8697896213184 220.909090909091,59.0470687237027 265.090909090909,80.6167741935484 309.272727272727,83.3129873772791 353.454545454545,64.4394950911641 397.636363636364,53.1153997194951 441.818181818182,83.5826086956522 486.0,72.7977559607293" fill="transparent" style="fill-opacity: 0; stroke-opacity: 0.35"/>
+              <circle r="1.9224" cx="0.0" cy="67.4615456381487" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="44.1818181818182" cy="76.089427826087" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="88.3636363636364" cy="58.5640421318373" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="132.545454545455" cy="38.3424432538569" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="176.727272727273" cy="43.7348696213184" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="220.909090909091" cy="59.9121487237027" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="265.090909090909" cy="81.4818541935484" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="309.272727272727" cy="84.1780673772791" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="353.454545454545" cy="65.3045750911641" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="397.636363636364" cy="53.9804797194951" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="441.818181818182" cy="84.4476886956522" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="486.0" cy="73.6628359607293" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+            </g>
+            <polyline stroke="#72AE6E" stroke-width="1.9224" points="0.0,66.5964656381487 44.1818181818182,75.224347826087 88.3636363636364,57.6989621318373 132.545454545455,37.477363253857 176.727272727273,42.8697896213184 220.909090909091,59.0470687237027 265.090909090909,80.6167741935484 309.272727272727,83.3129873772791 353.454545454545,64.4394950911641 397.636363636364,53.1153997194951 441.818181818182,83.5826086956522 486.0,72.7977559607293" fill="none"/>
+            <circle r="1.9224" cx="0.0" cy="66.5964656381487" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="44.1818181818182" cy="75.224347826087" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="88.3636363636364" cy="57.6989621318373" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="132.545454545455" cy="37.477363253857" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="176.727272727273" cy="42.8697896213184" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="220.909090909091" cy="59.0470687237027" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="265.090909090909" cy="80.6167741935484" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="309.272727272727" cy="83.3129873772791" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="353.454545454545" cy="64.4394950911641" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="397.636363636364" cy="53.1153997194951" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="441.818181818182" cy="83.5826086956522" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+            <circle r="1.9224" cx="486.0" cy="72.7977559607293" style="stroke-width: 1.9224; stroke: #72AE6E; fill: #72AE6E"/>
+          </g>
+          <g class="graph_layer" id="component_graphs_graph_2">
+            <g class="shadow" transform="translate(0.4806, 0.4806)">
+              <polyline stroke="black" stroke-width="1.9224" points="0.0,80.6167741935484 44.1818181818182,83.3129873772791 88.3636363636364,64.4394950911641 132.545454545455,53.1153997194951 176.727272727273,83.5826086956522 220.909090909091,62.8217671809257 265.090909090909,53.1153997194951 309.272727272727,55.2723702664797 353.454545454545,55.8116129032258 397.636363636364,50.9584291725105 441.818181818182,67.4053295932679 486.0,45.5660028050491" fill="transparent" style="fill-opacity: 0; stroke-opacity: 0.35"/>
+              <circle r="1.9224" cx="0.0" cy="81.4818541935484" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="44.1818181818182" cy="84.1780673772791" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="88.3636363636364" cy="65.3045750911641" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="132.545454545455" cy="53.9804797194951" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="176.727272727273" cy="84.4476886956522" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="220.909090909091" cy="63.6868471809257" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="265.090909090909" cy="53.9804797194951" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="309.272727272727" cy="56.1374502664797" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="353.454545454545" cy="56.6766929032258" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="397.636363636364" cy="51.8235091725105" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="441.818181818182" cy="68.2704095932679" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+              <circle r="1.9224" cx="486.0" cy="46.4310828050491" style="stroke-width: 1.9224; stroke: black; opacity: 0.35;"/>
+            </g>
+            <polyline stroke="#D1695E" stroke-width="1.9224" points="0.0,80.6167741935484 44.1818181818182,83.3129873772791 88.3636363636364,64.4394950911641 132.545454545455,53.1153997194951 176.727272727273,83.5826086956522 220.909090909091,62.8217671809257 265.090909090909,53.1153997194951 309.272727272727,55.2723702664797 353.454545454545,55.8116129032258 397.636363636364,50.9584291725105 441.818181818182,67.4053295932679 486.0,45.5660028050491" fill="none"/>
+            <circle r="1.9224" cx="0.0" cy="80.6167741935484" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="44.1818181818182" cy="83.3129873772791" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="88.3636363636364" cy="64.4394950911641" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="132.545454545455" cy="53.1153997194951" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="176.727272727273" cy="83.5826086956522" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="220.909090909091" cy="62.8217671809257" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="265.090909090909" cy="53.1153997194951" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="309.272727272727" cy="55.2723702664797" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="353.454545454545" cy="55.8116129032258" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="397.636363636364" cy="50.9584291725105" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="441.818181818182" cy="67.4053295932679" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+            <circle r="1.9224" cx="486.0" cy="45.5660028050491" style="stroke-width: 1.9224; stroke: #D1695E; fill: #D1695E"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(30.0, 39.6)" id="legend">
+      <rect width="7.2" x="140.4" y="0" height="7.2" fill="#6886B4"/>
+      <text font-size="10.368" x="153.36" y="7.776" fill="white" style="color: white">Jeff</text>
+      <rect width="7.2" x="190.8" y="0" height="7.2" fill="#FDD84E"/>
+      <text font-size="10.368" x="203.76" y="7.776" fill="white" style="color: white">Jerry</text>
+      <rect width="7.2" x="248.4" y="0" height="7.2" fill="#8A6EAF"/>
+      <text font-size="10.368" x="261.36" y="7.776" fill="white" style="color: white">Jack</text>
+      <rect width="7.2" x="298.8" y="0" height="7.2" fill="#72AE6E"/>
+      <text font-size="10.368" x="311.76" y="7.776" fill="white" style="color: white">Brasten</text>
+      <rect width="7.2" x="370.8" y="0" height="7.2" fill="#D1695E"/>
+      <text font-size="10.368" x="383.76" y="7.776" fill="white" style="color: white">Jim</text>
+    </g>
+  </g>
+</svg>
