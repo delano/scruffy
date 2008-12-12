@@ -6,7 +6,7 @@ module Scruffy::Renderers
         components << Scruffy::Components::Title.new(:title, :position => [5, 2], :size => [90, 7])
         components << Scruffy::Components::Viewport.new(:view, :position => [2, 26], :size => [89, 66]) do |graph|
           graph << Scruffy::Components::ValueMarkers.new(:values, :position => [0, 2], :size => [18, 89])
-          graph << Scruffy::Components::Grid.new(:grid, :position => [20, 0], :size => [80, 89])
+          graph << Scruffy::Components::Grid.new(:grid, :position => [20, 0], :size => [80, 89], :stroke_width => 1)
           graph << Scruffy::Components::DataMarkers.new(:labels, :position => [20, 92], :size => [80, 8])
           graph << Scruffy::Components::Graphs.new(:graphs, :position => [20, 0], :size => [80, 89])
         end
