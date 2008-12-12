@@ -54,6 +54,21 @@ module Scruffy::Themes
     
   end
   
+
+  
+  # A basic default theme
+  # Based on http://www.wellstyled.com/tools/colorscheme2/index-en.html?tetrad;50;0;255;1;-1;1;-0.6;0.1;1;0.6;1;1;-1;1;-0.6;0.1;1;0.6;1;1;-1;1;-0.6;0.1;1;0.6;1;1;-1;1;-0.6;0.1;1;0.6;1;0
+  class Standard < Base
+    def initialize
+      super({
+              :background => ['#FFFFFF', '#FFFFFF'],
+              :marker => '#999999',
+              :colors => %w(#1919B3 #FFB200 #FFFF00 #660099 #E9E9FF #FFF7E6 #FFFFE6 #F7E6FF #0F0F6B #996B00 #999900 #3D005C)
+            })
+    
+    end
+  end
+  
   # Keynote theme, based on Apple's Keynote presentation software.
   #
   # Color values used from Gruff's default theme.
