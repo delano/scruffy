@@ -13,11 +13,14 @@ module Scruffy
       attr_accessor :options
       attr_accessor :visible
       
+      # Options:
+      # stroke_width:: numeric value for width of line (0.1 - 10, default: 1)
       def initialize(id, options = {})
         @id = id.to_sym
         @position = options[:position] || [0, 0]
         @size = options[:size] || [100, 100]
         @visible = options[:visible] || true
+        
         @options = options
       end
       
