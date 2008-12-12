@@ -108,7 +108,7 @@ module Scruffy
       raise ArgumentError, "The arguments provided are not supported." if args.size > 0
 
       options ||= {}
-      self.theme = Scruffy::Themes::Keynote.new
+      self.theme = Scruffy::Themes::Standard.new
       self.renderer = Scruffy::Renderers::Standard.new
       self.rasterizer = Scruffy::Rasterizers::RMagickRasterizer.new
       self.value_formatter = Scruffy::Formatters::Number.new
@@ -128,6 +128,7 @@ module Scruffy
     # theme:: Theme used to render graph for this render only.
     # min_value:: Overrides the calculated minimum value used for the graph.
     # max_value:: Overrides the calculated maximum value used for the graph.
+    # renderer:: Provide a Renderer object to use instead of the default. 
     #
     # For other image formats:
     # as:: File format to render to ('PNG', 'JPG', etc)

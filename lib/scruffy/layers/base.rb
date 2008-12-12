@@ -49,12 +49,23 @@ module Scruffy::Layers
     # preferred_color:: Color used to render this graph, overrides theme color.
     # relevant_data:: Rarely used - indicates the data on this graph should not 
     #                 included in any graph data aggregations, such as averaging data points.
+    # style:: SVG polyline style. (default: 'fill-opacity: 0; stroke-opacity: 0.35')
+    # stroke_width:: numeric value for width of line (0.1 - 10, default: 1)
+    # relativestroke:: stroke-width relative  to image size? true or false (default)
+    # shadow:: Display line shadow? true or false (default) 
+    # dots:: Display co-ord dots? true or false (default)
     def initialize(options = {})
       @title              = options.delete(:title) || ''
-      @preferred_color    = options.delete(:preferred_color)
+      @preferred_color    = options.delete(:color)
       @relevant_data      = options.delete(:relevant_data) || true
       @points             = options.delete(:points) || []
       @points.extend Scruffy::Helpers::PointContainer unless @points.kind_of? Scruffy::Helpers::PointContainer
+      
+      options[:stroke_width] ||= 1
+      options[:dots] ||= false
+      options[:shadow] ||= false
+      options[:style] ||= false
+      options[:relativestroke] ||= false
       
       @options            = options
     end
