@@ -1,16 +1,36 @@
-= scruffy
+= scruffy, unofficial release
+
+This is a fork from based on the official 0.2.5 release. See below for 
+further a longer description.  
+
+== DESCRIPTION:
 
 * scruffy.rubyforge.org
 
 Author:: Brasten Sager (brasten@nagilum.com)
 Date:: July 8, 2008
-
-== DESCRIPTION:
+Release:: 0.2.5
 
 Scruffy is a Ruby library for generating high quality, good looking graphs.  It is designed
 to be easy to use and highly customizable.
 
 For basic usage instructions, refer to the documentation for Scruffy::Graph.
+
+
+== FORK DESCRIPTION
+
+* http://github.com/delano/scruffy/
+
+Author:: Delano Mandelbaum (delano@solutious.com)
+Author:: Kalin Harvey
+Date:: December 12, 2008
+
+We love scruffy. Our motivation for creating a forking is to make it useful for hi-resolution 
+graphs and charts. We would love to get our changes in to the official release but until
+that time they will be available at the GitHub URI above. 
+
+CHANGES.txt contains everything we've been up to. 
+
 
 == FEATURES
 
@@ -40,27 +60,7 @@ For basic usage instructions, refer to the documentation for Scruffy::Graph.
 
 * sudo gem install scruffy
 
+
 == LICENSE:
 
-(The MIT License)
-
-Copyright (c) 2008 Brasten Sager (brasten@nagilum.com)
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+See Licence.txt

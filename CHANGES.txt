@@ -1,4 +1,15 @@
 = Scruffy Changelog
+
+== Version 0.2.6
+(December 12th, 2008)
+* Forked from the official 0.2.5 release (http://github.com/delano/scruffy/)
+* Added stroke_width and style attributes to Line
+* Added toggleable shadow and dots attributes to Line
+* Changed the default Line to not include shadow or dots and to have a width of 1 pixel.
+* Added stroke_width for Component::Graph. Default is now 1. 
+* Changed the default theme to one appropriate for hi-res charts
+* Removed website from release
+
 == Version 0.2.3
 (July 4th, 2008)
 * Got pie charts working
