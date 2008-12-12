@@ -81,9 +81,11 @@ module Scruffy::Formatters
     #
     # separator:: decimal separator.  Defaults to '.'
     # delimiter:: delimiter character.  Defaults to ','
-    # precision_limit:: upper limit for auto precision.
+    # precision_limit:: upper limit for auto precision. (Ignored if roundup is specified)
+    # roundup:: round up the number to the given interval 
     def initialize(options = {})
       @precision        = options[:precision] || :none
+      @roundup          = options[:roundup] || :none
       @separator        = options[:separator] || '.'
       @delimiter        = options[:delimiter] || ','
       @precision_limit  = options[:precision_limit] || 4
@@ -107,15 +109,31 @@ module Scruffy::Formatters
       my_separator = @separator
       my_separator = "" unless my_precision > 0
       begin
-        parts = number_with_precision(target, my_precision).split('.')
+        number = ""
         
-        number = parts[0].to_s.gsub(/(\d)(?=(\d\d\d)+(?!\d))/, "\\1#{@delimiter}") + my_separator + parts[1].to_s
+        if @roundup == :none 
+          parts = number_with_precision(target, my_precision).split('.')
+          number = parts[0].to_s.gsub(/(\d)(?=(\d\d\d)+(?!\d))/, "\\1#{@delimiter}") + my_separator + parts[1].to_s
+        else 
+          number = roundup(target.to_f, @roundup).to_i.to_s
+        end
+        
         number
       rescue StandardError => e
         target
       end
     end
+    
+    
+    def roundup(target, nearest=100)
+      target % nearest == 0 ? target : target + nearest - (target % nearest)
+    end
+    def rounddown(target, nearest=100)
+      target % nearest == 0 ? target : target - (target % nearest)
+    end
   end
+  
+
   
   # Currency formatter.
   #
