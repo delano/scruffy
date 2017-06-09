@@ -3,7 +3,7 @@
 This is a fork from based on the official 0.2.5 release. See below for 
 further a longer description.  
 
-# Description:
+## Description:
 
 * scruffy.rubyforge.org
 
@@ -17,7 +17,7 @@ to be easy to use and highly customizable.
 For basic usage instructions, refer to the documentation for Scruffy::Graph.
 
 
-# Fork Description
+## Fork Description
 
 * http://github.com/delano/scruffy/
 
@@ -32,15 +32,15 @@ that time they will be available at the GitHub URI above.
 CHANGES.txt contains everything we've been up to. 
 
 
-# Features
+## Features
 
 * Renders to SVG or bitmap (PNG, JPG)
 
-# Problems:
+## Problems:
 
 * 0.2.3 version has missing legend text when rendering to bitmap. This is strange because the text is there in the SVG before it goes to RMagick.
 
-# Synopsis:
+## Synopsis:
 
     graph = Scruffy::Graph.new
     graph.title = "Sample Line Graph"
@@ -52,15 +52,15 @@ CHANGES.txt contains everything we've been up to.
     graph.render  :width => 300, :height => 200,
       :to => "line_test.png", :as => 'png'
 
-# Requirements :
+## Requirements :
 
 * Needs RMagick and Magic installed, if you wish to render to bitmap.
 
-# Install:
+## Install:
 
 * sudo gem install scruffy
 
 
-# License:
+## License:
 
 See Licence.txt
